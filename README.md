@@ -2,7 +2,7 @@
 
 ## About this issue
 
-If the `AnimationScriptPlayable` is output to a `ScriptPlayable` and it is not the **first** input of the `ScriptPlayable`,
+If the `AnimationScriptPlayable` is output to a `ScriptPlayable` and it is **not the first(at index 0)** input of the `ScriptPlayable`,
 the `ProcessRootMotion` and `ProcessAnimation` methods of the AnimationJob will not be executed.
 
 ![Playable Graph](./imgs/jobtest_bugly.png)
