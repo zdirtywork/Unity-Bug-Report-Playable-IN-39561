@@ -2,6 +2,9 @@
 
 **Unity has stated that they will not fix this bug.**
 
+> RESOLUTION NOTE:
+> It's an edge case of the ScriptPlayable, and there is also a workaround by inserting an AnimationLayerMixerPlayable into the stream.
+
 ## About this issue
 
 `ProcessRootMotion` and `ProcessAnimation` methods of the AnimationJob will not be executed if the `AnimationScriptPlayable` is output to a `ScriptPlayable` and it’s **not the first(at index 0)** input of the `ScriptPlayable`.
