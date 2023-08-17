@@ -27,3 +27,8 @@ You can temporarily fix this issue by inserting an `AnimationLayerMixerPlayable`
 Please refer to [AnimationJobTest_TempFix.cs](./Assets/AnimationJobTest_TempFix.cs) for more details.
 
 ![Playable Graph](./imgs/jobtest_tempfix.png)
+
+## Similar issue
+
+If a `ScriptPlayable<T>` (directly or indirectly) outputs to an `AnimationPlayableOutput` , only its first output port is valid. 
+Connecting to other output ports will not trigger updates for this `ScriptPlayable<T>` and its child `Playable`s.
